@@ -15,10 +15,14 @@ async function requireAuth() {
 }
 
 export async function loginAction(formData: FormData) {
-  const password = formData.get('password') as string;
+  const password = (formData.get('password') as string)?.trim();
   const validPassword = process.env.ADMIN_PASSWORD;
   
-  if (validPassword && password === validPassword) {
+  if (!validPassword) {
+    throw new Error('Server configuration error: ADMIN_PASSWORD environment variable is not set.');
+  }
+
+  if (password === validPassword) {
     const cookieStore = await cookies();
     cookieStore.set('admin_auth', validPassword, { 
       path: '/',
