@@ -1,0 +1,46 @@
+{
+  "batches": [
+    {
+      "id": "mock-batch-1",
+      "start_date": "2026-04-22T16:15:58.361Z",
+      "ready_date": "2026-05-13T16:15:58.362Z",
+      "eggs_incubated": 200,
+      "chicks_hatched": null,
+      "status": "incubating"
+    },
+    {
+      "id": "mock-batch-2",
+      "start_date": "2026-04-07T16:15:58.362Z",
+      "ready_date": "2026-04-28T16:15:58.362Z",
+      "eggs_incubated": 150,
+      "chicks_hatched": 135,
+      "status": "hatched"
+    },
+    {
+      "id": "4ec94c13-8750-4f6b-9b4d-cbde6e96010e",
+      "start_date": "2026-05-02",
+      "ready_date": "2026-05-23T00:00:00.000Z",
+      "eggs_incubated": 20,
+      "chicks_hatched": null,
+      "status": "incubating"
+    }
+  ],
+  "sales": [
+    {
+      "id": "mock-sale-1",
+      "batch_id": "mock-batch-2",
+      "quantity": 50,
+      "age_at_sale_days": 1,
+      "price_per_chick": 2.5,
+      "sale_date": "2026-04-29T16:15:58.362Z"
+    },
+    {
+      "batch_id": "mock-batch-2",
+      "quantity": 10,
+      "age_at_sale_days": 2,
+      "price_per_chick": 300,
+      "id": "0ca0883a-cb98-463f-8060-421fe311d0d2",
+      "sale_date": "2026-05-02T16:19:18.025Z"
+    }
+  ]
+}
