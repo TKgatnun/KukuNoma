@@ -33,7 +33,7 @@ export default function PlaceOrder() {
   const totalPrice = subtotal + (isDelivery ? DELIVERY_FEE : 0);
 
   // Your WhatsApp Number (Include country code, no + or dashes. e.g., 1234567890)
-  const WHATSAPP_NUMBER = "0720170943"; 
+  const WHATSAPP_NUMBER = "+254720170943"; 
   
   const whatsappMessage = encodeURIComponent(
     `Hello KukuNoma! I would like to place an order:\n\n` +
